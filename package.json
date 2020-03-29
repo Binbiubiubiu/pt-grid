@@ -1,0 +1,38 @@
+{
+  "name": "pt",
+  "version": "0.0.1",
+  "description": "miniapp component for taobao",
+  "devDependencies": {
+    "np": "^6.2.0",
+    "rc-tools": "^9.6.1-alpha.1"
+  },
+  "scripts": {
+    "build": "rc-tools run compile && node scripts/cp.js && node scripts/rm.js",
+    "prepub": "np --no-publish",
+    "pub": "npm publish"
+  },
+  "files": [
+    "es"
+  ],
+  "np": {
+    "yarn": false
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Simon-Bin/pt.git"
+  },
+  "keywords": [
+    "custom-component",
+    "mini-program",
+    "taobao"
+  ],
+  "author": "Simon-Bin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Simon-Bin/pt/issues"
+  },
+  "homepage": "https://github.com/Simon-Bin/pt#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}

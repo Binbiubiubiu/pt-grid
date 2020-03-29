@@ -1,6 +1,5 @@
 import { createMap, randomArr, isMovable, isGameOver } from './utils/index.js'
 
-let _self;
 Component({
   mixins: [],
   data: {
@@ -11,33 +10,32 @@ Component({
     level: 3,
     width: 300,
     height: 300,
-    bgUrl: 'http://p4.music.126.net/qX3ID48PhpAiDIt-VqlNkw==/109951163524169951.jpg',
-    onGameOver() {
-      my.confirm({
-        title: '温馨提示',
-        content: '游戏结束',
-        confirmButtonText: '再来一次',
-        cancelButtonText: '太简单了',
-        success: (result) => {
-          result.confirm && _self.initGame()
-        },
-      });
+    backgroundImage: '',
+    onGameOver:()=>{}
+  },
+  deriveDataFromProps(nextProps){
+   
+    if(nextProps.level!=this.props.level){
+      this.initGame(nextProps.level);
     }
   },
   didMount() {
-    _self = this;
-    this.initGame()
+    this.initGame(this.props.level)
   },
-  didUpdate() { },
+  didUpdate() {},
   didUnmount() { },
   methods: {
-    initGame() {
-      const map = createMap(this.props.level);
+    initGame(level) {
+      if(level<2){
+        level=2;
+        console.error("[pt] level 不能少于2")
+      }
+      
+      const map = createMap(level);
       this.setData({
         rightMap: map,
         map: randomArr(map),
       })
-      console.log(map)
     },
     handleItemTap(e) {
       const { idx } = e.target.dataset;

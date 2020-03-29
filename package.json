@@ -27,5 +27,9 @@
   "bugs": {
     "url": "https://github.com/Simon-Bin/pt-grid/issues"
   },
-  "homepage": "https://github.com/Simon-Bin/pt-grid#readme"
+  "homepage": "https://github.com/Simon-Bin/pt-grid#readme",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  }
 }

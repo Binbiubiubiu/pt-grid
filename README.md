@@ -1,4 +1,4 @@
-# pt
+# pt-grid
 
 miniapp component for taobao
 

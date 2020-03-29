@@ -1,5 +1,5 @@
 {
-  "name": "pt",
+  "name": "pt-grid",
   "version": "0.0.1",
   "description": "miniapp component for taobao",
   "devDependencies": {
@@ -8,8 +8,7 @@
   },
   "scripts": {
     "build": "rc-tools run compile && node scripts/cp.js && node scripts/rm.js",
-    "prepub": "np --yolo --no-publish --no-yarn",
-    "pub": "npm publish"
+    "prepub": "np --yolo --no-yarn"
   },
   "files": [
     "es"

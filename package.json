@@ -8,7 +8,8 @@
   },
   "scripts": {
     "build": "rc-tools run compile && node scripts/cp.js && node scripts/rm.js",
-    "pub": "np --yolo --no-yarn"
+    "pre": "np --yolo --no-yarn --no-publish",
+    "release": "npm publish"
   },
   "files": [
     "es"

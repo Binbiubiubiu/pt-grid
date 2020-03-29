@@ -53,13 +53,23 @@ Page({
       confirmButtonText: '再来一次',
       cancelButtonText: '太简单了',
       success: (result) => {
-        result.confirm && _self.pintu.initGame(_self.data.form.level);
+        result.confirm && _self.pintu.initGame(_self.data.level);
       },
     });
   }
 
 });
 
+```
+
+##### example.json
+
+```json
+{
+  "usingComponents": {
+    "pintu": "pt-grid/es/index"
+  }
+}
 ```
 
 ## 属性

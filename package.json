@@ -1,6 +1,6 @@
 {
   "name": "pt-grid",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "miniapp component for taobao",
   "devDependencies": {
     "np": "^6.2.0",

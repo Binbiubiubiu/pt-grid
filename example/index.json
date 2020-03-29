@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "pintu": "/src/index"
+    "pintu": "../src/index"
   }
 }

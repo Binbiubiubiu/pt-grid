@@ -8,14 +8,14 @@
   },
   "scripts": {
     "build": "rc-tools run compile && node scripts/cp.js && node scripts/rm.js",
-    "prepub": "np --yolo --no-yarn"
+    "pub": "np --yolo --no-yarn"
   },
   "files": [
     "es"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Simon-Bin/pt.git"
+    "url": "git+https://github.com/Simon-Bin/pt-grid.git"
   },
   "keywords": [
     "custom-component",
@@ -25,10 +25,7 @@
   "author": "Simon-Bin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Simon-Bin/pt/issues"
+    "url": "https://github.com/Simon-Bin/pt-grid/issues"
   },
-  "homepage": "https://github.com/Simon-Bin/pt#readme",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  }
+  "homepage": "https://github.com/Simon-Bin/pt-grid#readme"
 }

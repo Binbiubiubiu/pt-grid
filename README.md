@@ -6,10 +6,10 @@ miniapp component for taobao
 
 ```sh
 # npm
-npm install pt
+npm install pt-grid
 
 # yarn
-yarn add pt
+yarn add pt-grid
 ```
 
 ## 示例
